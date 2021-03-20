@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		@font-face {
+			font-family: font1;
+			src: url('font/font1.ttf');
+		}
+		@font-face {
+			font-family: font2;
+			src: url('font/font2.ttf');
+		}
+	</style>
+	<head>
+		<meta charset="utf-8" />
+		<title>2048小游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.touchSwipe.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<img src="img/0.gif" id="photo" class="photo" >
+		<div class="timer" style="font-size:36px; color:#75ffe7;">
+			<span class="rank" id = "rank"></span> 
+			<span class="time" id = "time"></span> 
+			<span class="score" id = "score"> </span>
+		</div>
+		<div class="mod">
+			<div class="modrank" id="modrank">
+				等级模式
+			</div>
+			<div class="modlevel" id="modlevel">
+				分数模式
+			</div>
+		</div>
+		<div class="level">
+			<button type="button" id="simple">简</button>
+			<button type="button" id="medium">中</button>
+			<button type="button" id="difficult">难</button>
+		</div>
+		<div class="game">
+			<table class="tab" cellpadding="6"></table>
+		</div>
+		<div class="restart" id="restart">重新开始</div>
+		
+		<div class="box">
+			<img src="img/1.gif" class="people" >
+		</div>
+		<audio id="music" src="mp3/bgm2.mp3" controls="controls" loop="true" hidden="true" ></audio>
+		<audio id="bgm" src="mp3/bgm1.mp3" controls="controls"   hidden="true"></audio>
+	</body>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</html>
